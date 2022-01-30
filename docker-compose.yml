@@ -17,6 +17,6 @@ services:
             - PORT=${FRONTEND_PORT}
         ports:
             - ${FRONTEND_PORT}:${FRONTEND_PORT}
-        command: bash -c "bash /root/dotfiles/makeSymbolicLinks_forDocker.sh ; bash"
+        command: bash -c "bash /root/dotfiles/makeSymbolicLinks_forDocker.sh ; npm run dev"
         tty: true
 

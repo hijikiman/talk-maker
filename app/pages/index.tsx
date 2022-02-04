@@ -1,7 +1,8 @@
 import type { NextPage } from 'next'
+import Frame from '../components/frame'
 
 const Home: NextPage = () => {
-    return <div></div>
+    return <Frame></Frame>
 }
 
 export default Home

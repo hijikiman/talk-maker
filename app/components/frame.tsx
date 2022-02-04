@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Header from '../components/Header'
 
 const Frame = ({ children }: { children: React.ReactNode }) => {
     return (
@@ -9,6 +9,7 @@ const Frame = ({ children }: { children: React.ReactNode }) => {
                 <meta name="description" content="Generate message app screen" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
+            <Header />
         </>
     )
 }

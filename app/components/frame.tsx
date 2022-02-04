@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 const Frame = ({ children }: { children: React.ReactNode }) => {
     return (
@@ -10,6 +11,7 @@ const Frame = ({ children }: { children: React.ReactNode }) => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header />
+            <Footer />
         </>
     )
 }

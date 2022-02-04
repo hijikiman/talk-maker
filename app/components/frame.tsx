@@ -11,6 +11,7 @@ const Frame = ({ children }: { children: React.ReactNode }) => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header />
+            {children}
             <Footer />
         </>
     )

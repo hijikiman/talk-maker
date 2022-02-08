@@ -1,7 +1,11 @@
 import { Form, Radio, Input, Button } from 'antd'
 import { useState } from 'react'
 
-const MessageControl = ({ addMessage }: { addMessage: VoidFunction }) => {
+const MessageControl = ({
+    addMessage = () => {},
+}: {
+    addMessage: (isReceive: boolean, message: string) => void
+}) => {
     const [form] = Form.useForm()
 
     const onFinish = () => {

@@ -37,17 +37,15 @@ const Main = () => {
                     <p>チャット画面を作成し、画像としてダウンロードできるサービスです。</p>
                 </div>
                 <div className="w-80 px-2.5">
-                    <div className="h-80 bg-blue-400">
+                    <div className="py-11 bg-blue-400">
                         <ul>
                             {messageList.map((item, key) => (
-                                <li key={key}>
-                                    <div>
-                                        <Reply
-                                            is_receive={item.is_receive}
-                                            message={item.message}
-                                            color={color}
-                                        />
-                                    </div>
+                                <li key={key} className="mt-3">
+                                    <Reply
+                                        is_receive={item.is_receive}
+                                        message={item.message}
+                                        color={color}
+                                    />
                                 </li>
                             ))}
                         </ul>

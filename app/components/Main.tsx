@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Reply from '../components/Reply'
 import MessageControl from '../components/MessageControl'
+import { Button } from 'antd'
+import { DownloadOutlined } from '@ant-design/icons'
 import { useState } from 'react'
 
 const Main = () => {
@@ -42,6 +44,11 @@ const Main = () => {
                         </ul>
                     </div>
                     <MessageControl addMessage={addMessage} />
+                    <div className="border-t border-solid border-gray-400 pt-7 pb-3">
+                        <Button type="primary" icon={<DownloadOutlined />} block>
+                            SAVE IMAGE
+                        </Button>
+                    </div>
                 </div>
             </div>
         </>

@@ -23,7 +23,7 @@ const Reply = ({
             >
                 <div className={is_receive ? 'triangle-left' : 'triangle-right'} />
                 <div className="inline-block balloon-background-color rounded-2xl px-4 py-3">
-                    <span>{message}</span>
+                    <p className="mb-0">{message}</p>
                 </div>
             </div>
             <style jsx>{`

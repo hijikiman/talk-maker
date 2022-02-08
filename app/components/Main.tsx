@@ -17,11 +17,11 @@ const Main = () => {
 
     const color = { is_receive: '#ffffff', is_not_receive: '#94df84' }
 
-    const addMessage = (message: string) => {
+    const addMessage = (isReceive, message: string) => {
         setMessageList([
             ...messageList,
             {
-                is_receive: true,
+                is_receive: isReceive,
                 message: message,
             },
         ])

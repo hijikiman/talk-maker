@@ -6,8 +6,13 @@ import { DownloadOutlined } from '@ant-design/icons'
 import { useState } from 'react'
 import html2canvas from 'html2canvas'
 
+interface MsgType {
+    is_receive: boolean
+    message: string
+}
+
 const Main = () => {
-    const [messageList, setMessageList] = useState([])
+    const [messageList, setMessageList] = useState<MsgType[]>([])
 
     const color = { is_receive: '#ffffff', is_not_receive: '#94df84' }
 

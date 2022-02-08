@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Reply from '../components/Reply'
+import MessageControl from '../components/MessageControl'
 import { useState } from 'react'
 
 const Main = () => {
@@ -15,6 +16,16 @@ const Main = () => {
     ])
 
     const color = { is_receive: '#ffffff', is_not_receive: '#94df84' }
+
+    const addMessage = (message: string) => {
+        setMessageList([
+            ...messageList,
+            {
+                is_receive: true,
+                message: message,
+            },
+        ])
+    }
 
     return (
         <>
@@ -41,6 +52,7 @@ const Main = () => {
                             ))}
                         </ul>
                     </div>
+                    <MessageControl addMessage={addMessage} />
                 </div>
             </div>
         </>

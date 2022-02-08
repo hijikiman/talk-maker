@@ -29,17 +29,19 @@ const Main = () => {
     const saveElementAsImage = () => {
         const filename = 'generated_by_talk-maker.jpg'
         const target = document.querySelector('#talking-area')
-        target.classList.add('fix-shift')
-        html2canvas(target, {
-            width: target.clientWidth,
-            height: target.clientHeight,
-        }).then((canvas) => {
-            let a = document.createElement('a')
-            a.href = canvas.toDataURL('image/png')
-            a.download = filename
-            a.click()
-        })
-        target.classList.remove('fix-shift')
+        if (target !== null) {
+            target.classList.add('fix-shift')
+            html2canvas(target, {
+                width: target.clientWidth,
+                height: target.clientHeight,
+            }).then((canvas) => {
+                let a = document.createElement('a')
+                a.href = canvas.toDataURL('image/png')
+                a.download = filename
+                a.click()
+            })
+            target.classList.remove('fix-shift')
+        }
     }
 
     return (

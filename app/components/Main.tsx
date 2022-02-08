@@ -28,7 +28,7 @@ const Main = () => {
 
     const saveElementAsImage = () => {
         const filename = 'generated_by_talk-maker.jpg'
-        const target = document.querySelector('#talking-area')
+        const target = document.querySelector('#talking-area') as HTMLElement
         if (target !== null) {
             target.classList.add('fix-shift')
             html2canvas(target, {

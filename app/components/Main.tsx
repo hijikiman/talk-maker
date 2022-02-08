@@ -4,16 +4,7 @@ import MessageControl from '../components/MessageControl'
 import { useState } from 'react'
 
 const Main = () => {
-    const [messageList, setMessageList] = useState([
-        {
-            is_receive: false,
-            message: 'hogehoge',
-        },
-        {
-            is_receive: true,
-            message: 'moja',
-        },
-    ])
+    const [messageList, setMessageList] = useState([])
 
     const color = { is_receive: '#ffffff', is_not_receive: '#94df84' }
 

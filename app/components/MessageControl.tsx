@@ -22,7 +22,7 @@ const MessageControl = ({ addMessage }: { addMessage: VoidFunction }) => {
                 </Form.Item>
                 <div className="flex justify-end">
                     <Button type="primary" htmlType="submit">
-                        Submit
+                        ADD MESSAGE
                     </Button>
                 </div>
             </Form>

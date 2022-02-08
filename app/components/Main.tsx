@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Reply from '../components/Reply'
 
 const Main = () => {
     return (
@@ -11,7 +12,11 @@ const Main = () => {
                     <p>チャット画面を作成し、画像としてダウンロードできるサービスです。</p>
                 </div>
                 <div className="w-80 px-2.5">
-                    <div className="h-80 bg-blue-400"></div>
+                    <div className="h-80 bg-blue-400">
+                        <div>
+                            <Reply message={'hogehoge'} />
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

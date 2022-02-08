@@ -38,7 +38,7 @@ const Main = () => {
     }
 
     return (
-        <>
+        <div className="font-noto">
             <div className="flex justify-center items-center pt-20 pb-14">
                 <Image src="/logo.png" alt="Vercel Logo" width={384} height={68} />
             </div>
@@ -73,7 +73,7 @@ const Main = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

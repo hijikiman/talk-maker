@@ -23,24 +23,22 @@ const Reply = ({
             >
                 <div className={is_receive ? 'triangle-left' : 'triangle-right'} />
                 <div className="inline-block balloon-background-color rounded-2xl px-4 py-3">
-                    <span>{message}</span>
+                    <p className="mb-0">{message}</p>
                 </div>
             </div>
             <style jsx>{`
                 .triangle-left {
-                    background: ${color.is_receive};
-                    width: 13px;
-                    height: 13px;
-                    clip-path: polygon(100% 0, 0 0, 100% 100%);
+                    border-style: solid;
+                    border-width: 0 13px 13px 0;
+                    border-color: transparent ${color.is_receive} transparent transparent;
                     position: absolute;
                     left: 6px;
                     top: 4px;
                 }
                 .triangle-right {
-                    background: ${color.is_not_receive};
-                    width: 13px;
-                    height: 13px;
-                    clip-path: polygon(100% 0, 0 0, 0 100%);
+                    border-style: solid;
+                    border-width: 13px 13px 0 0;
+                    border-color: ${color.is_not_receive} transparent transparent transparent;
                     position: absolute;
                     right: 6px;
                     top: 4px;

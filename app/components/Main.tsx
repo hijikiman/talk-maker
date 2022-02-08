@@ -8,7 +8,7 @@ const Main = () => {
 
     const color = { is_receive: '#ffffff', is_not_receive: '#94df84' }
 
-    const addMessage = (isReceive, message: string) => {
+    const addMessage = (isReceive: boolean, message: string) => {
         setMessageList([
             ...messageList,
             {

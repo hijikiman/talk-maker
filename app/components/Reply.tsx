@@ -8,7 +8,7 @@ const Reply = ({
     message,
     color,
 }: {
-    is_receive: bool
+    is_receive: boolean
     message: string
     color: Color
 }) => {

@@ -14,9 +14,11 @@ interface MsgType {
 
 const Main = () => {
     const [messageList, setMessageList] = useState<MsgType[]>([])
-    const [colors, setColors] = useState<{ background: string }>({ background: '#60A5FA' })
-
-    const color = { is_receive: '#ffffff', is_not_receive: '#94df84' }
+    const [colors, setColors] = useState<{ background: string }>({
+        background: '#60A5FA',
+        is_receive: '#ffffff',
+        is_not_receive: '#94df84',
+    })
 
     const addMessage = (isReceive: boolean, message: string) => {
         setMessageList([
@@ -29,7 +31,7 @@ const Main = () => {
     }
 
     const onChangeColors = (target, value) => {
-        const targetList = ['background']
+        const targetList = ['background', 'is_receive', 'is_not_receive']
         if (targetList.includes(target)) {
             let newColors = { ...colors }
             newColors[target] = value
@@ -73,7 +75,7 @@ const Main = () => {
                                     <Reply
                                         is_receive={item.is_receive}
                                         message={item.message}
-                                        color={color}
+                                        color={colors}
                                     />
                                 </li>
                             ))}

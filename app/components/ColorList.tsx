@@ -30,6 +30,14 @@ const ColorList = ({
                         onChangeColors={onChangeColors}
                     />
                 </li>
+                <li className="mt-6">
+                    <ColorListItem
+                        target="is_not_receive"
+                        label="Your Reply Baloon Color"
+                        color={colors.is_not_receive}
+                        onChangeColors={onChangeColors}
+                    />
+                </li>
             </ul>
         </div>
     )

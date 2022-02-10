@@ -34,7 +34,7 @@ const Main = () => {
         ])
     }
 
-    const onChangeColors = (target, value) => {
+    const onChangeColors = (target: string, value: string) => {
         const targetList = ['background', 'is_receive', 'is_not_receive']
         if (targetList.includes(target)) {
             let newColors = { ...colors }

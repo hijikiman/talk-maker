@@ -12,13 +12,15 @@ interface MsgType {
     message: string
 }
 
+export interface ColorsType {
+    background: string
+    is_receive: string
+    is_not_receive: string
+}
+
 const Main = () => {
     const [messageList, setMessageList] = useState<MsgType[]>([])
-    const [colors, setColors] = useState<{
-        background: string
-        is_receive: string
-        is_not_receive: string
-    }>({
+    const [colors, setColors] = useState<ColorsType>({
         background: '#60A5FA',
         is_receive: '#ffffff',
         is_not_receive: '#94df84',
@@ -34,7 +36,7 @@ const Main = () => {
         ])
     }
 
-    const onChangeColors = (target: string, value: string) => {
+    const onChangeColors = (target: keyof ColorsType, value: string) => {
         const targetList = ['background', 'is_receive', 'is_not_receive']
         if (targetList.includes(target)) {
             let newColors = { ...colors }

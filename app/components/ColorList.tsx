@@ -1,15 +1,12 @@
 import ColorListItem from './ColorListItem'
+import { ColorsType } from './Main'
 
 const ColorList = ({
     colors,
     onChangeColors = () => {},
 }: {
-    colors: {
-        background: string
-        is_receive: string
-        is_not_receive: string
-    }
-    onChangeColors: (target: string, value: string) => void
+    colors: ColorsType
+    onChangeColors: (target: keyof ColorsType, value: string) => void
 }) => {
     return (
         <div className="my-7 px-5">

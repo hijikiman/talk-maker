@@ -1,5 +1,6 @@
 import { HexColorPicker } from 'react-colorful'
 import { useState } from 'react'
+import { ColorsType } from './Main'
 
 const ColorListItem = ({
     target,
@@ -10,7 +11,7 @@ const ColorListItem = ({
     target: string
     label: string
     color: string
-    onChangeColors: (target: string, value: string) => void
+    onChangeColors: (target: keyof ColorsType, value: string) => void
 }) => {
     const [colorPickerIsOpen, setColorPickerIsOpen] = useState<boolean>(false)
 

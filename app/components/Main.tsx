@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Reply from '../components/Reply'
 import MessageControl from '../components/MessageControl'
+import ColorList from '../components/ColorList'
 import { Button } from 'antd'
 import { DownloadOutlined } from '@ant-design/icons'
 import { useState } from 'react'
@@ -13,6 +14,7 @@ interface MsgType {
 
 const Main = () => {
     const [messageList, setMessageList] = useState<MsgType[]>([])
+    const [colors, setColors] = useState<{ background: string }>({ background: '#60A5FA' })
 
     const color = { is_receive: '#ffffff', is_not_receive: '#94df84' }
 
@@ -24,6 +26,15 @@ const Main = () => {
                 message: message,
             },
         ])
+    }
+
+    const onChangeColors = (target, value) => {
+        const targetList = ['background']
+        if (targetList.includes(target)) {
+            let newColors = { ...colors }
+            newColors[target] = value
+            setColors(newColors)
+        }
     }
 
     const saveElementAsImage = () => {
@@ -52,9 +63,10 @@ const Main = () => {
             <div className="max-w-2xl pt-7 px-3 pb-12 mx-auto flex flex-col md:flex-row items-center md:items-start">
                 <div>
                     <p>チャット画面を作成し、画像としてダウンロードできるサービスです。</p>
+                    <ColorList colors={colors} onChangeColors={onChangeColors} />
                 </div>
                 <div className="w-80 px-2.5">
-                    <div id="talking-area" className="py-11 bg-blue-400">
+                    <div id="talking-area" className="py-11 talking-area-bg-color">
                         <ul>
                             {messageList.map((item, key) => (
                                 <li key={key} className="mt-3">
@@ -80,6 +92,13 @@ const Main = () => {
                     </div>
                 </div>
             </div>
+            <style jsx>
+                {`
+                    .talking-area-bg-color {
+                        background-color: ${colors.background};
+                    }
+                `}
+            </style>
         </div>
     )
 }

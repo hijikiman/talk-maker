@@ -12,7 +12,7 @@ const ColorList = ({
     onChangeColors: (target: string, value: string) => void
 }) => {
     return (
-        <div className="my-7">
+        <div className="my-7 px-5">
             <ul>
                 <li>
                     <ColorListItem

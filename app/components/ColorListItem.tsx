@@ -24,7 +24,7 @@ const ColorListItem = ({
 
     return (
         <>
-            <div className="flex justify-around">
+            <div className="flex justify-between">
                 <span>{label}</span>
                 <button
                     className="w-6 h-6 border border-gray-700 rounded-lg buttonColor"

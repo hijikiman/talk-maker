@@ -18,7 +18,7 @@ const ColorListItem = ({
         setColorPickerIsOpen(!colorPickerIsOpen)
     }
 
-    const onChange = (newColor) => {
+    const onChange = (newColor: string) => {
         onChangeColors(target, newColor)
     }
 

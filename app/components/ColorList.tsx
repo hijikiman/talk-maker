@@ -25,7 +25,7 @@ const ColorList = ({
                 <li className="mt-6">
                     <ColorListItem
                         target="is_receive"
-                        label="Reply Received Baloon Color"
+                        label="Reply Received Balloon Color"
                         color={colors.is_receive}
                         onChangeColors={onChangeColors}
                     />
@@ -33,7 +33,7 @@ const ColorList = ({
                 <li className="mt-6">
                     <ColorListItem
                         target="is_not_receive"
-                        label="Your Reply Baloon Color"
+                        label="Your Reply Balloon Color"
                         color={colors.is_not_receive}
                         onChangeColors={onChangeColors}
                     />

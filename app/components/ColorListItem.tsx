@@ -8,7 +8,7 @@ const ColorListItem = ({
     color,
     onChangeColors,
 }: {
-    target: string
+    target: keyof ColorsType
     label: string
     color: string
     onChangeColors: (target: keyof ColorsType, value: string) => void

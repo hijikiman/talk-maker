@@ -14,7 +14,11 @@ interface MsgType {
 
 const Main = () => {
     const [messageList, setMessageList] = useState<MsgType[]>([])
-    const [colors, setColors] = useState<{ background: string }>({
+    const [colors, setColors] = useState<{
+        background: string
+        is_receive: string
+        is_not_receive: string
+    }>({
         background: '#60A5FA',
         is_receive: '#ffffff',
         is_not_receive: '#94df84',

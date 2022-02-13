@@ -30,6 +30,17 @@ Talk Maker は、チャット画面を作成し、画像としてダウンロー
 <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white">
 </p>
 
+# Example
+
+<p align="center">
+<img src="./screenshots/worry-banana.jpg" width="200px">
+<img src="./screenshots/merry-san.jpg" width="200px">
+</p>
+<p align="center">
+<img src="./screenshots/agree-gorilla.jpg" width="200px">
+<img src="./screenshots/kimetsu.jpg" width="200px">
+</p>
+
 # Features
 - 色変更対応
 - 絵文字対応

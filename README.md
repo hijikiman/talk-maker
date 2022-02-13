@@ -4,7 +4,10 @@
 
 ---
 
+
+<p align="center">
 Talk Maker は、チャット画面を作成し、画像としてダウンロードできるサービスです。
+</p>
 
 <p align="center">
 <img src="./screenshots/site-capture.png" width="450px">

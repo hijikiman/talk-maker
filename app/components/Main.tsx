@@ -47,7 +47,7 @@ const Main = () => {
     return (
         <div className="font-noto">
             <div className="flex justify-center items-center pt-20 pb-14">
-                <Image src="/logo.png" alt="Vercel Logo" width={384} height={68} />
+                <Image src="/logo.png" alt="Vercel Logo" width={406} height={68} />
             </div>
             <div className="max-w-2xl pt-7 px-3 pb-12 mx-auto flex flex-col md:flex-row items-center md:items-start">
                 <div>

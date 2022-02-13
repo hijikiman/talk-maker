@@ -10,6 +10,8 @@ const MessageControl = ({
 
     const onFinish = () => {
         addMessage(form.getFieldsValue().isReceive, form.getFieldsValue().message)
+        const value = form.getFieldsValue()
+        form.setFieldsValue({ ...value, message: '' })
     }
 
     return (

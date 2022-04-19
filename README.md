@@ -2,6 +2,10 @@
 <img src="./app/public/logo.png" width="300px">
 </p>
 
+<p align="center">
+<img alt="GitHub deployments" src="https://img.shields.io/github/deployments/hijikiman/talk-maker/production?label=vercel&logo=vercel&logoColor=white&style=flat-square">
+</p>
+
 ---
 
 

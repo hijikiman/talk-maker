@@ -2,6 +2,10 @@
 <img src="./app/public/logo.png" width="300px">
 </p>
 
+<p align="center">
+<img alt="GitHub deployments" src="https://img.shields.io/github/deployments/hijikiman/talk-maker/production?label=vercel&logo=vercel&logoColor=white&style=flat-square">
+</p>
+
 ---
 
 
@@ -50,13 +54,14 @@ Talk Maker は、チャット画面を作成し、画像としてダウンロー
 - TypeScript
 - TailwindCSS
 - html2canvas
+- Ant Design
 - docker-compose (開発環境のみ)
 - Vercel
 
 # Support
 - MacOS: Safari, Chrome, Firefox
 - iOS: Safari
-- Windows: Chrome, Edge (たぶん)
+- Windows: Chrome, Edge
 
 # Start Up
 ## development environment

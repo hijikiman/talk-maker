@@ -8,3 +8,8 @@ export interface ColorsType {
     is_receive: string
     is_not_receive: string
 }
+
+export interface BalloonColorsType {
+    is_receive: string
+    is_not_receive: string
+}

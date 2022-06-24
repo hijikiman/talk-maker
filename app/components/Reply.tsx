@@ -1,7 +1,4 @@
-interface BalloonColorsType {
-    is_receive: string
-    is_not_receive: string
-}
+import { BalloonColorsType } from '../types'
 
 const Reply = ({
     is_receive,

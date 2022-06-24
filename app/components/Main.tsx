@@ -6,13 +6,7 @@ import { Button } from 'antd'
 import { DownloadOutlined } from '@ant-design/icons'
 import { useState } from 'react'
 import html2canvas from 'html2canvas'
-import { MsgType } from '../types'
-
-export interface ColorsType {
-    background: string
-    is_receive: string
-    is_not_receive: string
-}
+import { MsgType, ColorsType } from '../types'
 
 const Main = () => {
     const [messageList, setMessageList] = useState<MsgType[]>([])

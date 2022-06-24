@@ -1,5 +1,5 @@
 import ColorListItem from './ColorListItem'
-import { ColorsType } from './Main'
+import { ColorsType } from '../types'
 
 const ColorList = ({
     colors,

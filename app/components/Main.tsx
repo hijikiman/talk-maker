@@ -6,11 +6,7 @@ import { Button } from 'antd'
 import { DownloadOutlined } from '@ant-design/icons'
 import { useState } from 'react'
 import html2canvas from 'html2canvas'
-
-interface MsgType {
-    is_receive: boolean
-    message: string
-}
+import { MsgType } from '../types'
 
 export interface ColorsType {
     background: string

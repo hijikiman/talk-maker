@@ -1,7 +1,4 @@
-interface Color {
-    is_receive: string
-    is_not_receive: string
-}
+import { BalloonColorsType } from '../types'
 
 const Reply = ({
     is_receive,
@@ -10,7 +7,7 @@ const Reply = ({
 }: {
     is_receive: boolean
     message: string
-    color: Color
+    color: BalloonColorsType
 }) => {
     const switch_color = () => {
         return is_receive ? color.is_receive : color.is_not_receive

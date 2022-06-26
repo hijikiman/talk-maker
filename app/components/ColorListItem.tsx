@@ -1,6 +1,6 @@
 import { HexColorPicker } from 'react-colorful'
 import { useState } from 'react'
-import { ColorsType } from './Main'
+import { ColorsType } from '../types'
 
 const ColorListItem = ({
     target,
